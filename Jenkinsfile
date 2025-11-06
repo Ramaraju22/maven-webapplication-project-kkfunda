@@ -7,14 +7,14 @@ node
 
 
    // /var/lib/jenkins/tools/hudson.tasks.Maven_MavenInstallation/maven-3.9.9/bin
-   def mavenHome=tool name: "maven-3.9.9"
+   def mavenHome=tool name: "maven-3.9.8"
     try
     {
 
   stage('git checkout')
   {
     notifyBuild('STARTED')
-    git branch: 'development', url: 'https://github.com/kkdevopsb5/maven-webapplication-project-kkfunda.git'
+    git branch: 'development', url: 'https://github.com/Ramaraju22/maven-webapplication-project-kkfunda.git'
   } 
 
     stage('COMPILE')
